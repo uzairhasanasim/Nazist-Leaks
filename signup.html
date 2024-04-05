@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        #createio {
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+            font-size: xx-large;
+        }
+        #inputt {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-size: x-large;
+        }
+        #passs {
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #emaiil {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-size: x-large;
+        }
+        #teele {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-size: x-large;
+        }
+        #submit {
+            margin-top: 20px; /* Add some top margin */
+        }
+        /* Styling for the Create Account button */
+        #submit input[type="button"] {
+            background-color: #FF0000; /* Red background */
+            border: none; /* Remove borders */
+            color: white; /* White text */
+            padding: 15px 20px; /* Padding */
+            text-align: center; /* Center text */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Display as inline block */
+            font-size: 16px; /* Increase font size */
+            cursor: pointer; /* Cursor on hover */
+            border-radius: 8px; /* Rounded corners */
+            transition-duration: 0.4s; /* Smooth transition */
+        }
+
+        #submit input[type="button"]:hover {
+            background-color: #CC0000; /* Darker red on hover */
+        }
+        #message {
+            font-size: x-large;
+            color: firebrick;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 10px; /* Add some top margin */
+        }
+    </style>
+</head>
+<body>
+    <form action="/.action.php">
+        <div id="createio">
+            Create A New Account
+        </div>
+        <br><br>
+        <br><br> 
+        <div id="inputt">
+            Username
+            <br><br>
+            <input type="text" id="456" placeholder="Enter Your User Name" class="pop">
+        </div>
+        <br><br>
+        <div id="passs">
+            Password
+            <br><br>
+            <input type="password" id="pass" class="pass" placeholder="Enter Your Password">
+        </div>
+        <br><Br>
+        <div id="emaiil">
+            Email
+            <br><br>
+            <input type="email" id="email" class="email" placeholder="Enter Email">
+        </div>
+        <br><br>
+        <div id="teele">
+            Telephone
+            <br><br>
+            <input type="tel" id="tel" class="tel">
+        </div>
+        <br><br>
+        <div id="submit">
+            <input type="button" id="Create Account" placeholder="Create" class="Create" value="Create Account" onclick="showMessage()">
+        </div>
+        <br><br>
+        <div id="message"></div>
+
+        <script>
+            function showMessage() {
+                var messageElement = document.getElementById("message");
+                messageElement.innerHTML = "Account created successfully!";
+            }
+        </script>
+        
+        <br><br>
+        <a href="mailto:uzianimations@gmail.com">VERIFY BY EMAILING US</a>
+    </form>
+    <BR><BR>
+    
+    <a href="login.html">Log In To Existing Account</a>
+</body>
+</html>
+

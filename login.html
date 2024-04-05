@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <style>
+        #emaill {
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #op {
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #submit {
+            font-size: larger;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #header {
+            font-size: x-large;
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Styling for the login button */
+        #submit input[type="button"] {
+            background-color: #FF0000; /* Red background */
+            border: none; /* Remove borders */
+            color: white; /* White text */
+            padding: 15px 20px; /* Padding */
+            text-align: center; /* Center text */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Display as inline block */
+            font-size: 16px; /* Increase font size */
+            margin-top: 20px; /* Add some top margin */
+            cursor: pointer; /* Cursor on hover */
+            border-radius: 8px; /* Rounded corners */
+            transition-duration: 0.4s; /* Smooth transition */
+        }
+
+        #submit input[type="button"]:hover {
+            background-color: #CC0000; /* Darker red on hover */
+        }
+        #message {
+            font-size: large;
+            color: green;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 10px; /* Add some top margin */
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <br><br>
+        <form action="/action.php">
+            <div id="header">
+                <H1>LOG IN</H1>
+            </div>
+            <div id="emaill">
+                Email
+                <br><br>  
+                <input type="email" id="909" class="email" placeholder="Enter Your Email">
+            </div>
+
+            <div id="op">
+                <br><br>
+                Password
+                <br><br>
+                <input type="password" id="990" class="password" placeholder="password">
+            </div>
+            <div id="submit">
+                <br>
+                <!-- Apply the styling to the login button -->
+                <input type="button" value="Log In" id="loginButton" class="loginButton">
+            </div>
+
+            <!-- Message Display -->
+            <div id="message"></div>
+
+            <!-- JavaScript to display message -->
+            <script>
+                // Add an event listener to the login button
+                document.getElementById("loginButton").addEventListener("click", function() {
+                    var messageElement = document.getElementById("message");
+                    messageElement.innerHTML = "Aap Log In Hogaye Hain!";
+                });
+            </script>       
+            <script>
+                // Add an event listener to the login button
+                document.getElementById("loginButton").addEventListener("click", function() {
+                    // Redirect to the verification page after login
+                    window.location.href = "verify.html";
+                });
+            </script>    
+        </form>
+        <br><br>
+        <a href="signup.html">Already Have An Account?</a>
+    </main>
+</body>
+</html>
+
+
+
+
